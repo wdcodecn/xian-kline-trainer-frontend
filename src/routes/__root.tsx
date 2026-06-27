@@ -2,7 +2,7 @@
 import { HeadContent, Outlet, Scripts, createRootRouteWithContext } from '@tanstack/react-router'
 import type { QueryClient } from '@tanstack/react-query'
 import * as React from 'react'
-import appCss from '~/styles/app.css?url'
+import '~/styles/app.css'
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -15,7 +15,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: 'Real ETH candlestick drills for price-action practice.',
       },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
   }),
   component: RootComponent,
 })
