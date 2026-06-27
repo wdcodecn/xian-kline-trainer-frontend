@@ -1,0 +1,200 @@
+.orderTicket {
+  display: grid;
+  gap: 12px;
+  padding-bottom: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(76, 110, 186, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(7, 12, 18, 0.98), rgba(10, 14, 20, 0.98));
+}
+
+.progressCard,
+.quoteCard,
+.ticketSection,
+.positionBox {
+  margin-inline: 14px;
+}
+
+.progressCard,
+.ticketSection,
+.positionBox {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #1f2b37;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(8, 13, 18, 0.96), rgba(10, 15, 21, 0.96));
+}
+
+.quoteCard {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(9, 14, 20, 0.98), rgba(11, 17, 24, 0.98));
+}
+
+.replayControls,
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-inline: 14px;
+}
+
+.iconTextBtn {
+  min-height: 54px;
+  padding-inline: 16px;
+  border-radius: 12px;
+  letter-spacing: 0;
+}
+
+.iconTextBtn.replayPrimary {
+  border-color: rgba(112, 156, 255, 0.9);
+  color: #f7fbff;
+  background: linear-gradient(180deg, #2b4778, #1b2e4f);
+  font-weight: 800;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.18), 0 10px 26px rgba(44, 90, 179, 0.3);
+}
+
+.iconTextBtn.replayStep {
+  border-color: #30404f;
+  color: #dce5ee;
+  background: linear-gradient(180deg, #131d28, #0f161f);
+  font-weight: 700;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.actionStrip {
+  margin-top: -2px;
+}
+
+.sectionTitle,
+.positionHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTitle {
+  justify-content: flex-start;
+  color: #dfe7ee;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.positionHeader {
+  justify-content: space-between;
+}
+
+.ticketSection label {
+  display: grid;
+  gap: 10px;
+  color: #9fb0bc;
+  font-size: 13px;
+}
+
+.ticketSection label span strong {
+  color: #f3f7fb;
+  font-weight: 800;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 64px;
+  border: 1px solid #26333d;
+  border-radius: 12px;
+  color: #dfe8ef;
+  background: #121922;
+  font-size: 18px;
+  font-weight: 800;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.action.long {
+  border-color: rgba(47, 201, 154, 0.62);
+  color: #eafff8;
+  background: linear-gradient(180deg, rgba(21, 92, 74, 0.95), rgba(14, 56, 47, 0.98));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.12), 0 12px 28px rgba(18, 121, 94, 0.22);
+}
+
+.action.short {
+  border-color: rgba(255, 118, 118, 0.62);
+  color: #fff3f4;
+  background: linear-gradient(180deg, rgba(112, 33, 42, 0.95), rgba(73, 19, 27, 0.98));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.12), 0 12px 28px rgba(153, 45, 64, 0.22);
+}
+
+.submitBtn {
+  margin-inline: 14px;
+  min-height: 54px;
+  padding-inline: 14px;
+  border-radius: 12px;
+  background: #1f8f70;
+}
+
+.submitBtn.reviewBtn {
+  border-color: rgba(238, 189, 91, 0.82);
+  color: #ffe5a0;
+  background: linear-gradient(180deg, rgba(52, 40, 18, 0.98), rgba(26, 20, 10, 0.98));
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: inset 0 1px rgba(255, 245, 214, 0.1), 0 12px 26px rgba(171, 119, 26, 0.18);
+}
+
+.submitBtn.nextQuestionBtn {
+  min-height: 50px;
+  border-color: rgba(80, 101, 133, 0.82);
+  color: #cfd9e6;
+  background: linear-gradient(180deg, rgba(17, 23, 31, 0.98), rgba(12, 18, 26, 0.98));
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.fullWidth {
+  width: calc(100% - 28px);
+}
+
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  color: #aebbc5;
+  font-size: 12px;
+}
+
+.profit {
+  color: #20c997;
+}
+
+.loss {
+  color: #ff6b6b;
+}
+
+.ticketHead h2,
+.quoteCard strong,
+.monoPrice,
+.monoStat {
+  font-variant-numeric: tabular-nums;
+}
+
+.monoPrice {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.monoStat {
+  font-size: 22px;
+}
+
+.action:hover,
+.iconTextBtn:hover,
+.submitBtn:hover {
+  transform: translateY(-1px);
+}
