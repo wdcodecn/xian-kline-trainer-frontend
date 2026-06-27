@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build && tsc --noEmit",
     "preview": "vite preview",
-    "start": "npx srvx --prod -s dist/client dist/server/server.js"
+    "start": "node server.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.0",
